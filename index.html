@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pal Tubewell Boring Services | Purba Medinipur, West Bengal</title>
+    <meta name="description" content="Premium domestic, agricultural, and commercial tubewell boring services in Purba Medinipur. Experienced contractors, modern calyx rigs, deep boring, and water consultation.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="logo">
+            <span class="logo-accent">PAL</span> BOREWELLS
+        </div>
+        <nav class="nav-links">
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#machinery-tech">Machines</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#drilling-hub">Knowledge Hub</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="header-cta">
+            <a href="tel:{{PHONE_NUMBER}}" class="btn-primary-small btn-call-trigger">📞 Call Now</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <!-- High-tech backdrop -->
+        <div class="hero-grid-bg"></div>
+        <canvas id="hero-particles"></canvas>
+        <div class="hero-glow hero-glow-1"></div>
+        <div class="hero-glow hero-glow-2"></div>
+        
+        <div class="hero-container">
+            <div class="hero-text-block">
+                <span class="hero-tag">🥇 TRUSTED BOREWELL CONTRACTOR IN PURBA MEDINIPUR</span>
+                <h1>Professional Tubewell <br>Boring Services <br><span class="highlight-text">Across Purba Medinipur</span></h1>
+                <p>We provide residential, agricultural, and commercial deep tubewell boring using heavy-duty calyx machinery and experienced workers.</p>
+                <div class="hero-buttons">
+                    <a href="tel:{{PHONE_NUMBER}}" class="btn-primary btn-call-trigger">📞 Call Now</a>
+                    <a href="https://wa.me/{{WHATSAPP_NUMBER}}" class="btn-secondary btn-whatsapp-trigger" target="_blank">💬 WhatsApp Chat</a>
+                </div>
+                
+                <!-- Trust Badges -->
+                <div class="trust-badges">
+                    <div class="badge">
+                        <span class="badge-icon">✔</span>
+                        <span class="badge-text">12+ Years Experience</span>
+                    </div>
+                    <div class="badge">
+                        <span class="badge-icon">✔</span>
+                        <span class="badge-text">Modern Calyx Rigs</span>
+                    </div>
+                    <div class="badge">
+                        <span class="badge-icon">✔</span>
+                        <span class="badge-text">District-Wide Coverage</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual-block">
+                <!-- 3D Perspective Card -->
+                <div class="perspective-card" id="hero-3d-card">
+                    <div class="card-glow"></div>
+                    <div class="card-grid"></div>
+                    <!-- Using the clean drilling rig image with background removed -->
+                    <img src="assets/drilling_rig_clean.png" alt="Boring Machine" class="card-img floating-rig">
+                    <div class="tech-dot dot-1" data-label="Steel Core Winch"></div>
+                    <div class="tech-dot dot-2" data-label="Calyx Rotary Head"></div>
+                    <div class="tech-dot dot-3" data-label="High-Torque Drive"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span>Scroll to see our machinery in action</span>
+            <div class="mouse-icon">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-image-wrapper">
+                <div class="owner-portrait-container">
+                    <div class="portrait-glow"></div>
+                    <img src="assets/gallery/owner_clean.png" alt="Owner Buddhadeb Pal" class="about-owner-img">
+                </div>
+                <div class="experience-card">
+                    <h3>12+ Years</h3>
+                    <p>Of Trusted Boring Excellence</p>
+                </div>
+            </div>
+            <div class="about-content">
+                <span class="section-tag">ABOUT PAL BOREWELLS</span>
+                <h2>Reliable Water Solutions Partner</h2>
+                <p class="about-intro">Pal Borewells, led by <strong>{{OWNER_NAME}}</strong>, is the leading water tubewell contractor in Purba Medinipur, West Bengal. We specialize in tapping high-yield underground aquifers for residential, agricultural, and commercial communities.</p>
+                
+                <div class="about-bullets">
+                    <div class="bullet-item">
+                        <span class="bullet-icon">💧</span>
+                        <div class="bullet-text">
+                            <h4>Residential Tubewell Boring</h4>
+                            <p>Pure and clean drinking water tubewells for households and complexes.</p>
+                        </div>
+                    </div>
+                    <div class="bullet-item">
+                        <span class="bullet-icon">🌾</span>
+                        <div class="bullet-text">
+                            <h4>Agricultural Tubewell Boring</h4>
+                            <p>High-volume irrigation water setups for farming and crops.</p>
+                        </div>
+                    </div>
+                    <div class="bullet-item">
+                        <span class="bullet-icon">⚡</span>
+                        <div class="bullet-text">
+                            <h4>Deep & Shallow Tubewell</h4>
+                            <p>Precision drilling based on local geology and aquifer depths.</p>
+                        </div>
+                    </div>
+                    <div class="bullet-item">
+                        <span class="bullet-icon">🔍</span>
+                        <div class="bullet-text">
+                            <h4>Water Source Consultation</h4>
+                            <p>Scientific site survey to locate active water tables prior to drilling.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section id="services" class="services-section">
+        <div class="section-header">
+            <span class="section-tag">WHAT WE DO</span>
+            <h2>Our Specialized Boring Services</h2>
+            <p>We deliver high-durability boring and installation services tailored to household and farming needs.</p>
+        </div>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon residential-icon"></div>
+                <h3>Residential Tubewell Boring</h3>
+                <p>Suitable for houses, apartments, villages, and residential buildings. Ensuring pure, sand-free drinking water.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon agri-icon"></div>
+                <h3>Agricultural Tubewell Boring</h3>
+                <p>Tubewell boring for farming, irrigation, crop fields, and agricultural lands to ensure high flow water supply.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon deep-icon"></div>
+                <h3>Deep Tubewell</h3>
+                <p>Long-lasting deep boring for a reliable, chemical-free water supply, reaching depths of 300+ feet into stable aquifers.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon shallow-icon"></div>
+                <h3>Shallow Tubewell</h3>
+                <p>Affordable water solutions where shallow water tables are active, perfect for small yards and gardens.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon repair-icon"></div>
+                <h3>Repair & Maintenance</h3>
+                <p>Inspection, servicing, flushing sand blocks, and machinery repairs to keep your tubewell functioning year-round.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon consult-icon"></div>
+                <h3>Consultation</h3>
+                <p>Help customers choose the right boring depth, casing pipe, screen thickness, and water pump systems.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We Work Section (Simplified Specs) -->
+    <section id="machinery-tech" class="specs-section">
+        <div class="section-header">
+            <span class="section-tag">HOW WE WORK</span>
+            <h2>Our Heavy-Duty Machinery</h2>
+            <p>We deploy robust, high-performance calyx core machinery and transmission rigs to ensure stable, sand-free boring at any depth.</p>
+        </div>
+        
+        <div class="specs-grid">
+            <!-- Left panel: Diesel Engine -->
+            <div class="spec-panel-card float-item">
+                <div class="spec-card-visual">
+                    <div class="spec-visual-bg"></div>
+                    <img src="assets/diesel_engine_clean.png" alt="Heavy Duty Diesel Engine" class="spec-visual-img">
+                </div>
+                <div class="spec-card-content">
+                    <span class="spec-badge badge-blue">POWER ENGINE</span>
+                    <h3>10 HP Agricultural Engine</h3>
+                    <p>Our core power source is a high-torque agricultural diesel engine designed for raw power and reliability in remote site conditions.</p>
+                    <ul class="spec-list">
+                        <li><strong>Power Output:</strong> 10 Horsepower</li>
+                        <li><strong>Fuel Type:</strong> Heavy-Duty Diesel</li>
+                        <li><strong>Rotation Speed:</strong> Variable Throttle RPM</li>
+                        <li><strong>Cooling System:</strong> Water-cooled design for continuous operations</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Right panel: Calyx Drilling Rig -->
+            <div class="spec-panel-card float-item">
+                <div class="spec-card-visual">
+                    <div class="spec-visual-bg"></div>
+                    <img src="assets/drilling_rig_clean.png" alt="Calyx Drilling Rig" class="spec-visual-img">
+                </div>
+                <div class="spec-card-content">
+                    <span class="spec-badge badge-green">ROTARY RIG</span>
+                    <h3>Calyx Core Drilling Rig</h3>
+                    <p>The calyx rotary rig winch mechanism drives the drill bits deep into the ground, stabilizing the drilling assembly.</p>
+                    <ul class="spec-list">
+                        <li><strong>Drilling Method:</strong> Reverse mud rotary & core recovery</li>
+                        <li><strong>Bore Diameter:</strong> 3 inches up to 8 inches</li>
+                        <li><strong>Drilling Depth Capability:</strong> Up to 450 feet</li>
+                        <li><strong>Drive Mechanism:</strong> Heavy-duty gear winch with universal joint shaft</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section">
+        <div class="section-header">
+            <span class="section-tag">TRANSPARENT PRICING</span>
+            <h2>Industrial Standard Rates</h2>
+            <p>Get instant estimates for domestic, agricultural, and commercial tubewell boring across Purba Medinipur.</p>
+        </div>
+        
+        <div class="pricing-container">
+            <!-- Rate Cards List -->
+            <div class="pricing-cards-grid">
+                <!-- Card 1: Domestic -->
+                <div class="pricing-rate-card float-item">
+                    <div class="card-glow"></div>
+                    <div class="rate-badge badge-green">DOMESTIC</div>
+                    <h3>Domestic Tubewell</h3>
+                    <div class="price-value">₹55 <span class="price-unit">/ foot</span></div>
+                    <p class="price-inclusion">Ideal for household drinking water, residential homes, 3" & 4" PVC casing pipe setups.</p>
+                    <ul class="price-features">
+                        <li><span>✔</span> Premium PVC Casing Included</li>
+                        <li><span>✔</span> Brass Mesh Sand Filter</li>
+                        <li><span>✔</span> Water Table Site Survey</li>
+                        <li><span>✔</span> Complete Water Flushing</li>
+                    </ul>
+                    <a href="https://wa.me/{{WHATSAPP_NUMBER}}?text=Hello%20Pal%20Borewells,%20I%20want%20to%20book%20Domestic%20Tubewell%20Boring%20(₹55/ft)." target="_blank" class="btn-primary-small">Book Domestic Well</a>
+                </div>
+
+                <!-- Card 2: Agricultural -->
+                <div class="pricing-rate-card float-item highlight-card">
+                    <div class="card-glow"></div>
+                    <div class="rate-badge badge-blue">POPULAR FOR FARMS</div>
+                    <h3>Agricultural Irrigation</h3>
+                    <div class="price-value">₹70 <span class="price-unit">/ foot</span></div>
+                    <p class="price-inclusion">High-yield tubewells for crop fields, paddy farming, 6" & 8" heavy PVC casing pipes.</p>
+                    <ul class="price-features">
+                        <li><span>✔</span> High Discharge Capacity</li>
+                        <li><span>✔</span> 6" - 8" PVC Pipe Fitting</li>
+                        <li><span>✔</span> Calyx Core Machine Drilling</li>
+                        <li><span>✔</span> Deep Aquifer Water Tapping</li>
+                    </ul>
+                    <a href="https://wa.me/{{WHATSAPP_NUMBER}}?text=Hello%20Pal%20Borewells,%20I%20want%20to%20book%20Agricultural%20Irrigation%20Boring%20(₹70/ft)." target="_blank" class="btn-primary-small btn-highlight">Book Agri Well</a>
+                </div>
+
+                <!-- Card 3: Commercial & Industrial -->
+                <div class="pricing-rate-card float-item">
+                    <div class="card-glow"></div>
+                    <div class="rate-badge badge-amber">COMMERCIAL</div>
+                    <h3>Commercial & Industrial</h3>
+                    <div class="price-value">₹85 <span class="price-unit">/ foot</span></div>
+                    <p class="price-inclusion">Deep aquifer drilling for factories, poultry farms, schools, complexes, & plants.</p>
+                    <ul class="price-features">
+                        <li><span>✔</span> Heavy Duty 8"-10" Casing</li>
+                        <li><span>✔</span> Continuous Heavy Output</li>
+                        <li><span>✔</span> High-Torque Calyx Rig</li>
+                        <li><span>✔</span> Industrial Pump Integration</li>
+                    </ul>
+                    <a href="https://wa.me/{{WHATSAPP_NUMBER}}?text=Hello%20Pal%20Borewells,%20I%20want%20to%20book%20Commercial%20Boring%20(₹85/ft)." target="_blank" class="btn-primary-small">Book Commercial Well</a>
+                </div>
+
+                <!-- Card 4: Deep Rock / Calyx Core -->
+                <div class="pricing-rate-card float-item">
+                    <div class="card-glow"></div>
+                    <div class="rate-badge badge-purple">DEEP STRATA</div>
+                    <h3>Deep Rock & Calyx Core</h3>
+                    <div class="price-value">₹100 <span class="price-unit">/ foot</span></div>
+                    <p class="price-inclusion">Reverse mud rotary calyx core drilling for hard clay, gravel, & deep rock strata (up to 1,000 ft).</p>
+                    <ul class="price-features">
+                        <li><span>✔</span> Calyx Reverse Rotary Bit</li>
+                        <li><span>✔</span> Gravel Packing Filter</li>
+                        <li><span>✔</span> Deepest Clean Aquifer Tap</li>
+                        <li><span>✔</span> Lifetime Durability</li>
+                    </ul>
+                    <a href="https://wa.me/{{WHATSAPP_NUMBER}}?text=Hello%20Pal%20Borewells,%20I%20want%20to%20book%20Deep%20Rock%20Calyx%20Boring%20(₹100/ft)." target="_blank" class="btn-primary-small">Book Deep Core Well</a>
+                </div>
+            </div>
+            
+            <!-- Dynamic Estimator Calculator -->
+            <div class="pricing-calculator-card float-item">
+                <h3>Interactive Cost Estimator</h3>
+                <p>Adjust the depth slider and select a well type to estimate your boring costs instantly.</p>
+                
+                <div class="calculator-content">
+                    <div class="calculator-controls">
+                        <div class="input-group">
+                            <label for="well-type">Select Well Application:</label>
+                            <select id="well-type" class="calc-select">
+                                <option value="domestic" selected>🏠 Domestic Household Well (₹55 / ft)</option>
+                                <option value="agricultural">🌾 Agricultural Irrigation Well (₹70 / ft)</option>
+                                <option value="commercial">🏭 Commercial & Industrial Well (₹85 / ft)</option>
+                                <option value="deep_calyx">⛰️ Deep Rock & Calyx Core Well (₹100 / ft)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="input-group">
+                            <div class="slider-labels">
+                                <label for="well-depth">Boring Depth:</label>
+                                <span id="depth-display"><strong class="calc-highlight">250</strong> feet</span>
+                            </div>
+                            <input type="range" id="well-depth" min="10" max="1000" value="250" class="calc-slider">
+                            <div class="slider-bounds">
+                                <span>10 ft</span>
+                                <span>500 ft</span>
+                                <span>1000 ft</span>
+                            </div>
+                        </div>
+
+                        <!-- Estimate Details Breakdowns -->
+                        <div class="estimate-breakdown">
+                            <h4>Cost Breakdown</h4>
+                            <div class="breakdown-item">
+                                <span>Drilling Rate:</span>
+                                <span id="breakdown-rate">₹55 / ft</span>
+                            </div>
+                            <div class="breakdown-item">
+                                <span>Base Drilling:</span>
+                                <span id="breakdown-base">₹13,750</span>
+                            </div>
+                            <div class="breakdown-item success">
+                                <span>Casing & Screening:</span>
+                                <span class="badge-free">Included</span>
+                            </div>
+                            <div class="breakdown-item success">
+                                <span>Pre-Survey & Cleanup:</span>
+                                <span class="badge-free">Included</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Geological Strata Visualizer -->
+                    <div class="strata-visualizer">
+                        <h4 class="strata-title">Soil Strata & Equipment</h4>
+                        <div class="strata-column">
+                            <div class="strata-indicator" id="strata-indicator">
+                                <div class="indicator-arrow"></div>
+                                <div class="indicator-tooltip"><span id="indicator-depth">250</span> ft</div>
+                            </div>
+                            <!-- Strata Layers -->
+                            <div class="strata-layer layer-clay" data-depth-range="0-150">
+                                <span class="layer-name">Clay & Sandy Soil</span>
+                                <span class="layer-range">0 - 150 ft</span>
+                                <span class="layer-equipment">Rig: Light Winch Rig</span>
+                            </div>
+                            <div class="strata-layer layer-gravel" data-depth-range="150-450">
+                                <span class="layer-name">Gravel & Soft Rock</span>
+                                <span class="layer-range">150 - 450 ft</span>
+                                <span class="layer-equipment">Rig: Heavy Winch Rig</span>
+                            </div>
+                            <div class="strata-layer layer-rock" data-depth-range="450-1000">
+                                <span class="layer-name">Hard Rock & Granite</span>
+                                <span class="layer-range">450 - 1000 ft</span>
+                                <span class="layer-equipment">Rig: Rotary Rig</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="calculator-result">
+                    <span class="result-label">Estimated Boring Price</span>
+                    <div class="result-value" id="estimated-cost">₹13,750</div>
+                    <p class="result-note">*Estimation excludes pipes, filters, and submersible pump installation costs. Subject to physical soil surveys.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-choose-us" class="why-choose-section">
+        <div class="section-header">
+            <span class="section-tag">WHY WORK WITH US</span>
+            <h2>Why Customer Trust Pal Borewells</h2>
+            <p>We combine field experience with modern mechanical equipment to offer the best results.</p>
+        </div>
+        
+        <div class="why-grid">
+            <div class="why-card">
+                <span class="why-icon">🚜</span>
+                <h3>Modern Machines</h3>
+                <p>Equipped with high-performance calyx core rigs and air compressors for faster drilling.</p>
+            </div>
+            <div class="why-card">
+                <span class="why-icon">👷</span>
+                <h3>Experienced Workers</h3>
+                <p>Our onsite drilling crew has over a decade of hands-on geological expertise in Purba Medinipur.</p>
+            </div>
+            <div class="why-card">
+                <span class="why-icon">💰</span>
+                <h3>Affordable Price</h3>
+                <p>Transparent cost estimates. No hidden charges or unexpected fee hikes mid-operation.</p>
+            </div>
+            <div class="why-card">
+                <span class="why-icon">⏱</span>
+                <h3>Fast Work</h3>
+                <p>We respect your time. Most standard residential tubewells are completed within 1–2 days.</p>
+            </div>
+            <div class="why-card">
+                <span class="why-icon">🤝</span>
+                <h3>Reliable Service</h3>
+                <p>From initial survey to installation, we provide complete, step-by-step guidance.</p>
+            </div>
+            <div class="why-card">
+                <span class="why-icon">🧱</span>
+                <h3>Quality Materials</h3>
+                <p>We use heavy-gauge PVC casing pipes, durable brass screens, and high-efficiency pumps.</p>
+            </div>
+            <div class="why-card">
+                <span class="why-icon">⭐</span>
+                <h3>Customer Satisfaction</h3>
+                <p>Over 500+ residential and agricultural tubewells successfully boring water across the district.</p>
+            </div>
+            <div class="why-card">
+                <span class="why-icon">📍</span>
+                <h3>District-Wide Coverage</h3>
+                <p>Fast mobilization and logistical dispatch across all towns of Purba Medinipur.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Working Process Section -->
+    <section class="process-section">
+        <div class="section-header">
+            <span class="section-tag">OUR WORK FLOW</span>
+            <h2>Our Straightforward Process</h2>
+            <p>Five simple steps from your first query to running water.</p>
+        </div>
+        
+        <div class="process-timeline">
+            <div class="process-step">
+                <div class="step-num">01</div>
+                <h3>Call Us</h3>
+                <p>Discuss your domestic or farming water needs via phone or WhatsApp.</p>
+            </div>
+            <div class="process-arrow">↓</div>
+            <div class="process-step">
+                <div class="step-num">02</div>
+                <h3>Site Visit</h3>
+                <p>Our technicians survey the land to identify the ideal boring coordinates.</p>
+            </div>
+            <div class="process-arrow">↓</div>
+            <div class="process-step">
+                <div class="step-num">03</div>
+                <h3>Estimate</h3>
+                <p>Receive a clear cost break-down based on the depth and pipe selections.</p>
+            </div>
+            <div class="process-arrow">↓</div>
+            <div class="process-step">
+                <div class="step-num">04</div>
+                <h3>Boring Work</h3>
+                <p>Our mechanical boring crew initiates drilling, pipe casing, and sand screening.</p>
+            </div>
+            <div class="process-arrow">↓</div>
+            <div class="process-step">
+                <div class="step-num">05</div>
+                <h3>Completion</h3>
+                <p>The well is flushed clean, and pure drinking water begins to flow.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="section-header">
+            <span class="section-tag">OUR WORK SITE</span>
+            <h2>Real Working Gallery</h2>
+            <p>A collection of our actual borewell machines, ongoing work, and completed wells.</p>
+        </div>
+        
+        <div class="gallery-grid">
+            <div class="gallery-item float-item" data-src="assets/gallery/site_boring_rig_tower.jpg">
+                <img src="assets/gallery/site_boring_rig_tower.jpg" alt="High Tower Drilling Rig Setup">
+                <div class="gallery-overlay">
+                    <span>High Tower Boring Rig</span>
+                </div>
+            </div>
+            <div class="gallery-item float-item" data-src="assets/gallery/site_bamboo_rig_setup.jpg">
+                <img src="assets/gallery/site_bamboo_rig_setup.jpg" alt="Onsite Bamboo Rig & Pump Assembly">
+                <div class="gallery-overlay">
+                    <span>Rig & Pump Site Assembly</span>
+                </div>
+            </div>
+            <div class="gallery-item float-item" data-src="assets/gallery/site_gearbox_winch.jpg">
+                <img src="assets/gallery/site_gearbox_winch.jpg" alt="Rotary Gearbox and Winch Unit">
+                <div class="gallery-overlay">
+                    <span>Gearbox & Winch Unit</span>
+                </div>
+            </div>
+            <div class="gallery-item float-item" data-src="assets/gallery/site_pvc_casing_pipes.jpg">
+                <img src="assets/gallery/site_pvc_casing_pipes.jpg" alt="Heavy-Duty Blue PVC Casing Pipes">
+                <div class="gallery-overlay">
+                    <span>Heavy Casing Pipes</span>
+                </div>
+            </div>
+            <div class="gallery-item float-item" data-src="assets/gallery/site_well_inauguration.jpg">
+                <img src="assets/gallery/site_well_inauguration.jpg" alt="Completed Tubewell with Traditional Garland">
+                <div class="gallery-overlay">
+                    <span>Completed Well Setup</span>
+                </div>
+            </div>
+            <div class="gallery-item float-item" data-src="assets/gallery/site_engine_frame.jpg">
+                <img src="assets/gallery/site_engine_frame.jpg" alt="Heavy-Duty Calyx Engine Setup">
+                <div class="gallery-overlay">
+                    <span>Engine & Frame Setup</span>
+                </div>
+            </div>
+            <div class="gallery-item float-item" data-src="assets/gallery/site_winch_bamboo.jpg">
+                <img src="assets/gallery/site_winch_bamboo.jpg" alt="Lead Winch Rig Under Bamboo Scaffold">
+                <div class="gallery-overlay">
+                    <span>Scaffold & Winch Rig</span>
+                </div>
+            </div>
+            <div class="gallery-item float-item" data-src="assets/gallery/site_gearhead_worker.jpg">
+                <img src="assets/gallery/site_gearhead_worker.jpg" alt="Calyx Rotary Head Operation">
+                <div class="gallery-overlay">
+                    <span>Rotary Boring Site</span>
+                </div>
+            </div>
+            <div class="gallery-item float-item" data-src="assets/gallery/site_diesel_engine.jpg">
+                <img src="assets/gallery/site_diesel_engine.jpg" alt="Onsite Diesel Drive Engine">
+                <div class="gallery-overlay">
+                    <span>High-Torque Drive Engine</span>
+                </div>
+            </div>
+            <div class="gallery-item float-item" data-src="assets/gallery/site_winch_shaft.jpg">
+                <img src="assets/gallery/site_winch_shaft.jpg" alt="Power Transmission Shaft & Coupling">
+                <div class="gallery-overlay">
+                    <span>Drilling Drive Assembly</span>
+                </div>
+            </div>
+            <div class="gallery-item float-item" data-src="assets/gallery/finished_well.png">
+                <img src="assets/gallery/finished_well.png" alt="Agricultural Tubewell Flow">
+                <div class="gallery-overlay">
+                    <span>Finished Well Water Flow</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Drilling Technical Knowledge Hub Section -->
+    <section id="drilling-hub" class="hub-section">
+        <div class="section-header">
+            <span class="section-tag">DRILLING KNOWLEDGE HUB</span>
+            <h2>Understanding Tubewell Boring</h2>
+            <p>Essential guide to aquifers, casing technologies, and the drilling process to help you make informed decisions.</p>
+        </div>
+        
+        <div class="hub-grid">
+            <div class="hub-card float-item">
+                <div class="hub-icon">🔍</div>
+                <h3>1. Water Table Surveying</h3>
+                <p>Before drilling, we conduct resistivity studies to map underground aquifers. In Purba Medinipur, viable fresh water layers are typically located in the deep sands at 150 ft to 300+ ft depths, beneath protective clay layers.</p>
+            </div>
+            
+            <div class="hub-card float-item">
+                <div class="hub-icon">⚙</div>
+                <h3>2. Calyx Core Methodology</h3>
+                <p>We utilize the reverse rotary calyx drilling technique. Rotary drill heads cut through layers of soil and clay, using water mud circulation to stabilize the borehole walls and flush out core cuttings efficiently.</p>
+            </div>
+            
+            <div class="hub-card float-item">
+                <div class="hub-icon">🧱</div>
+                <h3>3. Casing Pipe Installation</h3>
+                <p>To prevent borehole collapse and sand infiltration, high-tensile PVC casing pipes are lowered. Heavy-gauge PVC (Class 5/10 kg/cm²) resists lateral ground pressure and guarantees well stability for decades.</p>
+            </div>
+            
+            <div class="hub-card float-item">
+                <div class="hub-icon">💧</div>
+                <h3>4. Sand Screening & Filters</h3>
+                <p>A precision-slotted screen filter wrapped in brass mesh is positioned at the water-bearing sand stratum. This lets clean water flow into the pipe while trapping sand particles out, ensuring clean sand-free water.</p>
+            </div>
+            
+            <div class="hub-card float-item">
+                <div class="hub-icon">⚡</div>
+                <h3>5. Well Development & Flushing</h3>
+                <p>After casing, the well is flushed using high-pressure air compressors to clean mud cake, sand fragments, and clay deposits. Flushing continues until the water is crystal clear and sand-free.</p>
+            </div>
+            
+            <div class="hub-card float-item">
+                <div class="hub-icon">🔌</div>
+                <h3>6. Submersible Pump Selection</h3>
+                <p>Depending on the static water level and required flow rate (domestic vs. irrigation), we calculate the pump horsepower (HP). Submersible pumps are set below the draw-down level for continuous water supply.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox-modal">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" alt="Enlarged gallery project">
+        <div id="lightbox-caption"></div>
+    </div>
+
+    <!-- Service Area Section -->
+    <section class="area-section">
+        <div class="area-container">
+            <span class="section-tag">OUR LOCATION COVERAGE</span>
+            <h2>Serving Entire Purba Medinipur</h2>
+            <p class="area-description">We provide tubewell boring services in all areas of Purba Medinipur district. We mobilize our machinery quickly to your doorstep, whether you are in a town or a village.</p>
+            
+            <div class="area-grid">
+                <div class="area-tag">Contai (Kanthi)</div>
+                <div class="area-tag">Egra</div>
+                <div class="area-tag">Tamluk</div>
+                <div class="area-tag">Haldia</div>
+                <div class="area-tag">Nandakumar</div>
+                <div class="area-tag">Kolaghat</div>
+                <div class="area-tag">Ramnagar</div>
+                <div class="area-tag">Bhagabanpur</div>
+                <div class="area-tag">Patashpur</div>
+                <div class="area-tag">Khejuri</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="section-header">
+            <span class="section-tag">TESTIMONIALS</span>
+            <h2>What Our Clients Say</h2>
+            <p>Real stories of satisfaction from residential owners and agricultural farmers.</p>
+        </div>
+        
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p class="feedback">"Pal Borewells completed our domestic tubewell in Egra within 24 hours. The water is clean and sand-free. Highly recommended!"</p>
+                <h4 class="client-name">Anirban Samanta</h4>
+                <span class="client-location">Egra</span>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p class="feedback">"We hired Buddhadeb Pal's team for boring in our crop fields near Contai. Excellent flow rates, perfect pipe fittings, and very affordable price."</p>
+                <h4 class="client-name">Debabrata Maity</h4>
+                <span class="client-location">Contai</span>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p class="feedback">"The calyx core drilling and casing setup was handled very professionally. Their workers are highly skilled and efficient."</p>
+                <h4 class="client-name">Sajal Bhowmik</h4>
+                <span class="client-location">Tamluk</span>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p class="feedback">"We needed a deep tubewell (280 ft) for our apartment building in Haldia. They guided us on local water tables and completed the job on budget."</p>
+                <h4 class="client-name">Mihir Adhikari</h4>
+                <span class="client-location">Haldia</span>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p class="feedback">"Excellent cleaning and flushing service. Our old clogged borewell is now working like brand new with high water output."</p>
+                <h4 class="client-name">Pradip Ghorai</h4>
+                <span class="client-location">Nandakumar</span>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p class="feedback">"Very reliable. They arrived in Ramnagar on time, surveyed the land scientifically, and completed the tubewell drilling quickly."</p>
+                <h4 class="client-name">Uttam Pramanik</h4>
+                <span class="client-location">Ramnagar</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="section-header">
+            <span class="section-tag">FAQ</span>
+            <h2>Frequently Asked Questions</h2>
+            <p>Clear answers to help you understand tubewell boring parameters.</p>
+        </div>
+        
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How much does tubewell boring cost in Purba Medinipur?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>The total cost depends on the required drilling depth, type of casing pipe (heavy PVC or GI), aquifer layer structure, and local geological conditions. Contact us for a detailed, customized quote.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How many days does it take to complete the boring process?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Usually, a standard residential tubewell is completed in 1 to 2 days. Deeper commercial or industrial borewells might take 3 to 4 days depending on soil layers and depth requirements.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Do you provide agricultural tubewell boring services?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, we specialize in high-capacity agricultural tubewells for irrigation, crop fields, fish ponds, and farmlands. We deploy diesel-driven high-pressure mechanical rigs to ensure optimal flow.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Do you visit remote villages in Purba Medinipur?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, we provide tubewell boring services across all villages, agricultural blocks, and urban wards in the Purba Medinipur district.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Do you provide pre-drilling water table consultations?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! We conduct pre-drilling land surveys and scientific resistivity consultations to locate the most water-bearing zones, minimizing dry borehole risks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Call to Action -->
+    <section class="final-cta-section">
+        <div class="final-cta-content">
+            <h2>Need Professional Tubewell Boring?</h2>
+            <p>Contact us today for fast and reliable boring service anywhere in Purba Medinipur district.</p>
+            <div class="cta-buttons">
+                <a href="tel:{{PHONE_NUMBER}}" class="btn-primary-large btn-call-trigger">📞 Call Now</a>
+                <a href="https://wa.me/{{WHATSAPP_NUMBER}}" class="btn-whatsapp-large btn-whatsapp-trigger" target="_blank">💬 WhatsApp Chat</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Map Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <span class="section-tag">GET IN TOUCH</span>
+                <h2>Ready to Drill? <br><span class="highlight-text">Let's Connect.</span></h2>
+                <p>Have questions about depths, pricing, or schedules? Get in touch directly with our business owner.</p>
+                
+                <div class="info-items">
+                    <div class="info-item">
+                        <span class="item-icon">👤</span>
+                        <div>
+                            <h4>Owner Name</h4>
+                            <p class="config-owner-name">{{OWNER_NAME}}</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="item-icon">📞</span>
+                        <div>
+                            <h4>Call Phone</h4>
+                            <p class="config-phone-number"><a href="tel:{{PHONE_NUMBER}}" class="btn-call-trigger">{{PHONE_NUMBER}}</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="item-icon">💬</span>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p class="config-whatsapp-number"><a href="https://wa.me/{{WHATSAPP_NUMBER}}" class="btn-whatsapp-trigger" target="_blank">{{WHATSAPP_DISPLAY}}</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="item-icon">📍</span>
+                        <div>
+                            <h4>Business Address</h4>
+                            <p class="config-address">{{ADDRESS}}</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="item-icon">⏰</span>
+                        <div>
+                            <h4>Business Hours</h4>
+                            <p>Every Day: 7:00 AM – 8:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-map-wrapper">
+                <!-- Premium Google Map Placeholder -->
+                <div class="map-placeholder">
+                    <div class="map-icon">🗺️</div>
+                    <h3>Purba Medinipur Service Location</h3>
+                    <p class="config-address">{{ADDRESS}}</p>
+                    <p class="map-text">Operational dispatch center serving Tamluk, Contai, Haldia, Egra, and surrounding blocks.</p>
+                    <a href="https://maps.google.com" target="_blank" class="btn-map-route">View Routing on Google Maps</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-cta-bar">
+        <a href="tel:{{PHONE_NUMBER}}" class="floating-btn float-call btn-call-trigger" title="Call Us Now">
+            <span class="float-icon">📞</span>
+            <span class="float-text">Call Now</span>
+        </a>
+        <a href="https://wa.me/{{WHATSAPP_NUMBER}}" class="floating-btn float-whatsapp btn-whatsapp-trigger" target="_blank" title="WhatsApp Chat">
+            <span class="float-icon">💬</span>
+            <span class="float-text">WhatsApp</span>
+        </a>
+        <button id="btn-scroll-top" class="floating-btn float-top" title="Scroll To Top">
+            <span class="float-icon">↑</span>
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>PAL BOREWELLS</h3>
+                <p>The most trusted tubewell boring contractor in Purba Medinipur, delivering pure water solutions to households and farmlands since 2014.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-links">
+                <h4>Our Services</h4>
+                <a href="#services">Domestic Boring</a>
+                <a href="#services">Agri Irrigation Tubewells</a>
+                <a href="#services">Deep Aquifer Boring</a>
+                <a href="#services">Tubewell Flushing</a>
+                <a href="#services">Water Level Survey</a>
+            </div>
+            <div class="footer-links">
+                <h4>Service Area</h4>
+                <p>Contai, Egra, Tamluk, Haldia, Ramnagar, Kolaghat, and all blocks of Purba Medinipur district, West Bengal.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Pal Borewells. All rights reserved. | Optimized for Local SEO in West Bengal.</p>
+        </div>
+    </footer>
+
+    <!-- Fixed Floating Calculate Cost Button -->
+    <button id="btn-open-calc-modal" class="floating-calc-widget" title="Calculate Tubewell Boring Cost">
+        <span class="calc-icon">🧮</span>
+        <span class="calc-text">Calculate Cost</span>
+    </button>
+
+    <!-- Boring Cost Calculator Modal -->
+    <div id="calc-modal" class="calc-modal-container" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="calc-modal-box">
+            <button id="calc-modal-close" class="calc-modal-close" aria-label="Close calculator">&times;</button>
+            
+            <div class="calc-modal-header">
+                <span class="modal-badge">INSTANT ESTIMATOR</span>
+                <h3 id="modal-title">Boring Cost Calculator</h3>
+                <p>Select application type & enter depth up to 1,000 ft</p>
+            </div>
+
+            <div class="modal-calc-body">
+                <div class="modal-input-group">
+                    <label for="modal-well-type">
+                        <span>Tubewell Application Type:</span>
+                        <span id="modal-rate-tag" class="rate-tag">Rate: ₹55/ft</span>
+                    </label>
+                    <select id="modal-well-type" class="modal-calc-select">
+                        <option value="domestic" selected>🏠 Domestic Household Boring (₹55 / ft)</option>
+                        <option value="agricultural">🌾 Agricultural Irrigation Boring (₹70 / ft)</option>
+                        <option value="commercial">🏭 Commercial & Industrial Boring (₹85 / ft)</option>
+                        <option value="deep_calyx">⛰️ Deep Rock & Calyx Core Boring (₹100 / ft)</option>
+                    </select>
+                </div>
+
+                <div class="modal-input-group">
+                    <label for="modal-depth-input">
+                        <span>Boring Depth (Feet):</span>
+                        <span class="depth-tag">Max: 1000 ft</span>
+                    </label>
+                    <div class="modal-depth-number-wrapper">
+                        <input type="number" id="modal-depth-input" class="modal-depth-input" min="1" max="1000" value="250" placeholder="Enter depth (up to 1000 ft)">
+                        <span class="modal-depth-unit">ft</span>
+                    </div>
+                    <input type="range" id="modal-depth-slider" class="modal-range-slider" min="1" max="1000" value="250">
+                    <div class="modal-range-bounds">
+                        <span>1 ft</span>
+                        <span>500 ft</span>
+                        <span>1000 ft</span>
+                    </div>
+                </div>
+
+                <div class="modal-result-card">
+                    <div class="modal-result-label">Estimated Boring Price</div>
+                    <div id="modal-total-cost" class="modal-result-amount">₹13,750</div>
+                    <div id="modal-rate-breakdown" class="modal-result-breakdown">250 feet &times; ₹55 / ft (Domestic Household)</div>
+                </div>
+
+                <a id="modal-whatsapp-booking-btn" href="https://wa.me/919046062191" target="_blank" class="modal-whatsapp-btn">
+                    <span>💬 Book via WhatsApp Now</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- GreenSock Animation Platform & Smooth Scroll -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <!-- Script -->
+    <script src="app.js?v=3"></script>
+</body>
+</html>
