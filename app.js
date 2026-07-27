@@ -8,7 +8,7 @@ const CONFIG = {
     PHONE_NUMBER: "+91 97335 59820",
     WHATSAPP_NUMBER: "919046062191", // Raw digits format for WhatsApp API (wa.me)
     WHATSAPP_DISPLAY: "+91 90460 62191",
-    ADDRESS: "Contai Bypass, Purba Medinipur, West Bengal, India - 721401"
+    ADDRESS: "Mugberia, Purba Medinipur, West Bengal, India - 721425"
 };
 
 // Replace variables dynamically across the DOM
@@ -530,4 +530,110 @@ document.addEventListener('DOMContentLoaded', () => {
             updateModalCalculator();
         });
     }
+
+    // ==========================================================================
+    // Mobile Navigation Drawer Toggle & Interactivity
+    // ==========================================================================
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileNavCloseBtn = document.getElementById('mobile-nav-close');
+    const mainNav = document.getElementById('main-nav');
+    const navBackdrop = document.getElementById('nav-backdrop');
+    const drawerBtnCalc = document.getElementById('drawer-btn-calc');
+
+    function toggleMobileMenu(open) {
+        if (!mainNav) return;
+        const isOpen = open !== undefined ? open : !mainNav.classList.contains('active');
+        if (isOpen) {
+            mainNav.classList.add('active');
+            if (mobileMenuBtn) {
+                mobileMenuBtn.classList.add('open');
+                mobileMenuBtn.setAttribute('aria-expanded', 'true');
+            }
+            if (navBackdrop) navBackdrop.classList.add('active');
+            document.body.classList.add('menu-open');
+            document.documentElement.classList.add('menu-open');
+        } else {
+            mainNav.classList.remove('active');
+            if (mobileMenuBtn) {
+                mobileMenuBtn.classList.remove('open');
+                mobileMenuBtn.setAttribute('aria-expanded', 'false');
+            }
+            if (navBackdrop) navBackdrop.classList.remove('active');
+            document.body.classList.remove('menu-open');
+            document.documentElement.classList.remove('menu-open');
+        }
+    }
+
+    if (mobileMenuBtn) {
+        mobileMenuBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            toggleMobileMenu();
+        });
+    }
+
+    if (mobileNavCloseBtn) {
+        mobileNavCloseBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            toggleMobileMenu(false);
+        });
+    }
+
+    if (navBackdrop) {
+        navBackdrop.addEventListener('click', () => toggleMobileMenu(false));
+    }
+
+    // Open calculator modal from drawer footer button
+    if (drawerBtnCalc) {
+        drawerBtnCalc.addEventListener('click', () => {
+            toggleMobileMenu(false);
+            if (calcModal) {
+                calcModal.classList.add('show');
+                updateModalCalculator();
+            }
+        });
+    }
+
+    // Close drawer when clicking any nav link
+    if (mainNav) {
+        const navLinks = mainNav.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                toggleMobileMenu(false);
+            });
+        });
+    }
+
+    // Close drawer on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && mainNav && mainNav.classList.contains('active')) {
+            toggleMobileMenu(false);
+        }
+    });
+
+    // Active Section Scroll Highlight in Mobile Drawer & Header
+    const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const id = entry.target.getAttribute('id');
+                if (id && mainNav) {
+                    const navItems = mainNav.querySelectorAll('.nav-item');
+                    navItems.forEach(item => {
+                        const href = item.getAttribute('href');
+                        if (href === `#${id}`) {
+                            item.classList.add('active');
+                        } else {
+                            item.classList.remove('active');
+                        }
+                    });
+                }
+            }
+        });
+    }, {
+        threshold: 0.3
+    });
+
+    document.querySelectorAll('section[id]').forEach(sec => {
+        sectionObserver.observe(sec);
+    });
 });
+

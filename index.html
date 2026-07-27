@@ -17,20 +17,60 @@
         <div class="logo">
             <span class="logo-accent">PAL</span> BOREWELLS
         </div>
-        <nav class="nav-links">
-            <a href="#hero">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#machinery-tech">Machines</a>
-            <a href="#pricing">Pricing</a>
-            <a href="#drilling-hub">Knowledge Hub</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#contact">Contact</a>
+        <nav class="nav-links" id="main-nav" aria-label="Mobile Application Navigation">
+            <div class="mobile-nav-header">
+                <div class="mobile-nav-brand">
+                    <div class="mobile-nav-logo"><span class="logo-accent">PAL</span> BOREWELLS</div>
+                    <span class="mobile-nav-tag">🥇 Purba Medinipur Contractor</span>
+                </div>
+                <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close Navigation Drawer">✕</button>
+            </div>
+
+            <div class="mobile-nav-status">
+                <span class="status-dot"></span>
+                <span class="status-text">⏰ 7:00 AM – 8:00 PM • District-Wide Dispatch</span>
+            </div>
+
+            <div class="mobile-nav-menu">
+                <a href="#hero" class="nav-item"><span class="nav-icon">🏠</span><span class="nav-num">01</span><span class="nav-text">Home</span><span class="nav-arrow">→</span></a>
+                <a href="#about" class="nav-item"><span class="nav-icon">ℹ️</span><span class="nav-num">02</span><span class="nav-text">About Us</span><span class="nav-arrow">→</span></a>
+                <a href="#services" class="nav-item"><span class="nav-icon">🛠️</span><span class="nav-num">03</span><span class="nav-text">Boring Services</span><span class="nav-arrow">→</span></a>
+                <a href="#pricing" class="nav-item"><span class="nav-icon">💰</span><span class="nav-num">04</span><span class="nav-text">Pricing & Rates</span><span class="nav-arrow">→</span></a>
+                <a href="#machinery-tech" class="nav-item"><span class="nav-icon">🚜</span><span class="nav-num">05</span><span class="nav-text">How We Work (Rig & Machines)</span><span class="nav-arrow">→</span></a>
+                <a href="#why-choose-us" class="nav-item"><span class="nav-icon">⭐</span><span class="nav-num">06</span><span class="nav-text">Why Choose Us</span><span class="nav-arrow">→</span></a>
+                <a href="#drilling-hub" class="nav-item"><span class="nav-icon">📚</span><span class="nav-num">07</span><span class="nav-text">Knowledge Hub</span><span class="nav-arrow">→</span></a>
+                <a href="#gallery" class="nav-item"><span class="nav-icon">🖼️</span><span class="nav-num">08</span><span class="nav-text">Work Gallery</span><span class="nav-arrow">→</span></a>
+                <a href="#area" class="nav-item"><span class="nav-icon">📍</span><span class="nav-num">09</span><span class="nav-text">Service Areas</span><span class="nav-arrow">→</span></a>
+                <a href="#testimonials" class="nav-item"><span class="nav-icon">💬</span><span class="nav-num">10</span><span class="nav-text">Client Reviews</span><span class="nav-arrow">→</span></a>
+                <a href="#faq" class="nav-item"><span class="nav-icon">❓</span><span class="nav-num">11</span><span class="nav-text">FAQs</span><span class="nav-arrow">→</span></a>
+                <a href="#contact" class="nav-item"><span class="nav-icon">📞</span><span class="nav-num">12</span><span class="nav-text">Contact Us</span><span class="nav-arrow">→</span></a>
+            </div>
+
+            <div class="mobile-nav-footer">
+                <button id="drawer-btn-calc" class="btn-drawer-calc">
+                    <span class="btn-icon">🧮</span>
+                    <span>Calculate Boring Cost</span>
+                </button>
+                <div class="drawer-contact-row">
+                    <a href="tel:{{PHONE_NUMBER}}" class="btn-drawer-call btn-call-trigger">
+                        <span>📞 Call Now</span>
+                    </a>
+                    <a href="https://wa.me/{{WHATSAPP_NUMBER}}" class="btn-drawer-wa btn-whatsapp-trigger" target="_blank">
+                        <span>💬 WhatsApp</span>
+                    </a>
+                </div>
+            </div>
         </nav>
         <div class="header-cta">
             <a href="tel:{{PHONE_NUMBER}}" class="btn-primary-small btn-call-trigger">📞 Call Now</a>
+            <button class="mobile-toggle" id="mobile-menu-btn" aria-label="Toggle Navigation Menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
         </div>
     </header>
+    <div class="nav-backdrop" id="nav-backdrop"></div>
 
     <!-- Hero Section -->
     <section id="hero" class="hero-section">
@@ -43,6 +83,10 @@
         <div class="hero-container">
             <div class="hero-text-block">
                 <span class="hero-tag">🥇 TRUSTED BOREWELL CONTRACTOR IN PURBA MEDINIPUR</span>
+                <div class="hero-status-pill">
+                    <span class="status-pulse-dot"></span>
+                    <span class="status-pill-text">⏰ <strong>7:00 AM – 8:00 PM</strong> • District-Wide Dispatch</span>
+                </div>
                 <h1>Professional Tubewell <br>Boring Services <br><span class="highlight-text">Across Purba Medinipur</span></h1>
                 <p>We provide residential, agricultural, and commercial deep tubewell boring using heavy-duty calyx machinery and experienced workers.</p>
                 <div class="hero-buttons">
@@ -179,55 +223,6 @@
                 <div class="service-icon consult-icon"></div>
                 <h3>Consultation</h3>
                 <p>Help customers choose the right boring depth, casing pipe, screen thickness, and water pump systems.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- How We Work Section (Simplified Specs) -->
-    <section id="machinery-tech" class="specs-section">
-        <div class="section-header">
-            <span class="section-tag">HOW WE WORK</span>
-            <h2>Our Heavy-Duty Machinery</h2>
-            <p>We deploy robust, high-performance calyx core machinery and transmission rigs to ensure stable, sand-free boring at any depth.</p>
-        </div>
-        
-        <div class="specs-grid">
-            <!-- Left panel: Diesel Engine -->
-            <div class="spec-panel-card float-item">
-                <div class="spec-card-visual">
-                    <div class="spec-visual-bg"></div>
-                    <img src="assets/diesel_engine_clean.png" alt="Heavy Duty Diesel Engine" class="spec-visual-img">
-                </div>
-                <div class="spec-card-content">
-                    <span class="spec-badge badge-blue">POWER ENGINE</span>
-                    <h3>10 HP Agricultural Engine</h3>
-                    <p>Our core power source is a high-torque agricultural diesel engine designed for raw power and reliability in remote site conditions.</p>
-                    <ul class="spec-list">
-                        <li><strong>Power Output:</strong> 10 Horsepower</li>
-                        <li><strong>Fuel Type:</strong> Heavy-Duty Diesel</li>
-                        <li><strong>Rotation Speed:</strong> Variable Throttle RPM</li>
-                        <li><strong>Cooling System:</strong> Water-cooled design for continuous operations</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <!-- Right panel: Calyx Drilling Rig -->
-            <div class="spec-panel-card float-item">
-                <div class="spec-card-visual">
-                    <div class="spec-visual-bg"></div>
-                    <img src="assets/drilling_rig_clean.png" alt="Calyx Drilling Rig" class="spec-visual-img">
-                </div>
-                <div class="spec-card-content">
-                    <span class="spec-badge badge-green">ROTARY RIG</span>
-                    <h3>Calyx Core Drilling Rig</h3>
-                    <p>The calyx rotary rig winch mechanism drives the drill bits deep into the ground, stabilizing the drilling assembly.</p>
-                    <ul class="spec-list">
-                        <li><strong>Drilling Method:</strong> Reverse mud rotary & core recovery</li>
-                        <li><strong>Bore Diameter:</strong> 3 inches up to 8 inches</li>
-                        <li><strong>Drilling Depth Capability:</strong> Up to 450 feet</li>
-                        <li><strong>Drive Mechanism:</strong> Heavy-duty gear winch with universal joint shaft</li>
-                    </ul>
-                </div>
             </div>
         </div>
     </section>
@@ -392,6 +387,55 @@
                     <span class="result-label">Estimated Boring Price</span>
                     <div class="result-value" id="estimated-cost">₹13,750</div>
                     <p class="result-note">*Estimation excludes pipes, filters, and submersible pump installation costs. Subject to physical soil surveys.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We Work Section (Simplified Specs) -->
+    <section id="machinery-tech" class="specs-section">
+        <div class="section-header">
+            <span class="section-tag">HOW WE WORK</span>
+            <h2>Our Heavy-Duty Machinery</h2>
+            <p>We deploy robust, high-performance calyx core machinery and transmission rigs to ensure stable, sand-free boring at any depth.</p>
+        </div>
+        
+        <div class="specs-grid">
+            <!-- Left panel: Diesel Engine -->
+            <div class="spec-panel-card float-item">
+                <div class="spec-card-visual">
+                    <div class="spec-visual-bg"></div>
+                    <img src="assets/diesel_engine_clean.png" alt="Heavy Duty Diesel Engine" class="spec-visual-img">
+                </div>
+                <div class="spec-card-content">
+                    <span class="spec-badge badge-blue">POWER ENGINE</span>
+                    <h3>10 HP Agricultural Engine</h3>
+                    <p>Our core power source is a high-torque agricultural diesel engine designed for raw power and reliability in remote site conditions.</p>
+                    <ul class="spec-list">
+                        <li><strong>Power Output:</strong> 10 Horsepower</li>
+                        <li><strong>Fuel Type:</strong> Heavy-Duty Diesel</li>
+                        <li><strong>Rotation Speed:</strong> Variable Throttle RPM</li>
+                        <li><strong>Cooling System:</strong> Water-cooled design for continuous operations</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Right panel: Calyx Drilling Rig -->
+            <div class="spec-panel-card float-item">
+                <div class="spec-card-visual">
+                    <div class="spec-visual-bg"></div>
+                    <img src="assets/drilling_rig_clean.png" alt="Calyx Drilling Rig" class="spec-visual-img">
+                </div>
+                <div class="spec-card-content">
+                    <span class="spec-badge badge-green">ROTARY RIG</span>
+                    <h3>Calyx Core Drilling Rig</h3>
+                    <p>The calyx rotary rig winch mechanism drives the drill bits deep into the ground, stabilizing the drilling assembly.</p>
+                    <ul class="spec-list">
+                        <li><strong>Drilling Method:</strong> Reverse mud rotary & core recovery</li>
+                        <li><strong>Bore Diameter:</strong> 3 inches up to 8 inches</li>
+                        <li><strong>Drilling Depth Capability:</strong> Up to 450 feet</li>
+                        <li><strong>Drive Mechanism:</strong> Heavy-duty gear winch with universal joint shaft</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -623,7 +667,7 @@
     </div>
 
     <!-- Service Area Section -->
-    <section class="area-section">
+    <section id="area" class="area-section">
         <div class="area-container">
             <span class="section-tag">OUR LOCATION COVERAGE</span>
             <h2>Serving Entire Purba Medinipur</h2>
@@ -639,13 +683,21 @@
                 <div class="area-tag">Ramnagar</div>
                 <div class="area-tag">Bhagabanpur</div>
                 <div class="area-tag">Patashpur</div>
-                <div class="area-tag">Khejuri</div>
+                <div class="area-tag">Khejuri (Khajuri)</div>
+                <div class="area-tag">Paharpur</div>
+                <div class="area-tag">Mugberia</div>
+                <div class="area-tag">Bhupatinagar</div>
+                <div class="area-tag">Itaberia</div>
+                <div class="area-tag">Argoyal</div>
+                <div class="area-tag">Sunia</div>
+                <div class="area-tag">Kalinagar</div>
+                <div class="area-tag">Heria</div>
             </div>
         </div>
     </section>
 
     <!-- Testimonials Section -->
-    <section class="testimonials-section">
+    <section id="testimonials" class="testimonials-section">
         <div class="section-header">
             <span class="section-tag">TESTIMONIALS</span>
             <h2>What Our Clients Say</h2>
@@ -771,38 +823,38 @@
                 
                 <div class="info-items">
                     <div class="info-item">
-                        <span class="item-icon">👤</span>
-                        <div>
-                            <h4>Owner Name</h4>
-                            <p class="config-owner-name">{{OWNER_NAME}}</p>
+                        <div class="item-icon-box">👤</div>
+                        <div class="item-details">
+                            <span class="item-label">Owner Name</span>
+                            <strong class="item-val config-owner-name">{{OWNER_NAME}}</strong>
                         </div>
                     </div>
                     <div class="info-item">
-                        <span class="item-icon">📞</span>
-                        <div>
-                            <h4>Call Phone</h4>
-                            <p class="config-phone-number"><a href="tel:{{PHONE_NUMBER}}" class="btn-call-trigger">{{PHONE_NUMBER}}</a></p>
+                        <div class="item-icon-box icon-call">📞</div>
+                        <div class="item-details">
+                            <span class="item-label">Call Phone</span>
+                            <strong class="item-val config-phone-number"><a href="tel:{{PHONE_NUMBER}}" class="btn-call-trigger item-link">{{PHONE_NUMBER}}</a></strong>
                         </div>
                     </div>
                     <div class="info-item">
-                        <span class="item-icon">💬</span>
-                        <div>
-                            <h4>WhatsApp</h4>
-                            <p class="config-whatsapp-number"><a href="https://wa.me/{{WHATSAPP_NUMBER}}" class="btn-whatsapp-trigger" target="_blank">{{WHATSAPP_DISPLAY}}</a></p>
+                        <div class="item-icon-box icon-wa">💬</div>
+                        <div class="item-details">
+                            <span class="item-label">WhatsApp</span>
+                            <strong class="item-val config-whatsapp-number"><a href="https://wa.me/{{WHATSAPP_NUMBER}}" class="btn-whatsapp-trigger item-link" target="_blank">{{WHATSAPP_DISPLAY}}</a></strong>
                         </div>
                     </div>
                     <div class="info-item">
-                        <span class="item-icon">📍</span>
-                        <div>
-                            <h4>Business Address</h4>
-                            <p class="config-address">{{ADDRESS}}</p>
+                        <div class="item-icon-box icon-address">📍</div>
+                        <div class="item-details">
+                            <span class="item-label">Business Address</span>
+                            <strong class="item-val config-address">{{ADDRESS}}</strong>
                         </div>
                     </div>
                     <div class="info-item">
-                        <span class="item-icon">⏰</span>
-                        <div>
-                            <h4>Business Hours</h4>
-                            <p>Every Day: 7:00 AM – 8:00 PM</p>
+                        <div class="item-icon-box icon-hours">⏰</div>
+                        <div class="item-details">
+                            <span class="item-label">Business Hours</span>
+                            <strong class="item-val highlight-val">Every Day: 7:00 AM – 8:00 PM</strong>
                         </div>
                     </div>
                 </div>
@@ -936,6 +988,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
     <!-- Script -->
-    <script src="app.js?v=3"></script>
+    <script src="app.js?v=4"></script>
 </body>
 </html>
