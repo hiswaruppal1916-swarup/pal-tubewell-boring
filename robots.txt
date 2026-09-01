@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pal-tubewell-boring.vercel.app/sitemap.xml
