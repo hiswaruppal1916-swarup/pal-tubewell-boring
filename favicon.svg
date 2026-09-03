@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e3a8a"/>
+    </linearGradient>
+    <linearGradient id="drop-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Outer Badge Circle -->
+  <circle cx="256" cy="256" r="246" fill="url(#bg-grad)" stroke="#ffffff" stroke-width="12"/>
+  
+  <!-- Outer Water Drop Silhouette -->
+  <path d="M256 90 C256 90 150 230 150 320 A106 106 0 0 0 362 320 C362 230 256 90 256 90 Z" fill="url(#drop-grad)" opacity="0.95"/>
+  
+  <!-- Drilling Rig Tower (Industrial Silhouette) -->
+  <!-- Main A-Frame Derrick -->
+  <polygon points="256,110 200,380 230,380 256,170 282,380 312,380" fill="#ffffff"/>
+  
+  <!-- Tower Cross Beams -->
+  <line x1="228" y1="230" x2="284" y2="230" stroke="#0f172a" stroke-width="10" stroke-linecap="round"/>
+  <line x1="215" y1="290" x2="297" y2="290" stroke="#0f172a" stroke-width="10" stroke-linecap="round"/>
+  <line x1="204" y1="350" x2="308" y2="350" stroke="#0f172a" stroke-width="10" stroke-linecap="round"/>
+  
+  <line x1="228" y1="230" x2="297" y2="290" stroke="#0f172a" stroke-width="6"/>
+  <line x1="284" y1="230" x2="215" y2="290" stroke="#0f172a" stroke-width="6"/>
+  <line x1="215" y1="290" x2="308" y2="350" stroke="#0f172a" stroke-width="6"/>
+  <line x1="297" y1="290" x2="204" y2="350" stroke="#0f172a" stroke-width="6"/>
+  
+  <!-- Central Drill Stem & Bit (Gold Accent) -->
+  <rect x="250" y="140" width="12" height="240" fill="url(#gold-grad)" rx="3"/>
+  <polygon points="256,410 242,370 270,370" fill="url(#gold-grad)"/>
+  
+  <!-- Ground / Water Waves Base -->
+  <path d="M140 370 Q198 350 256 370 T372 370 L372 400 Q314 420 256 400 T140 400 Z" fill="#38bdf8" opacity="0.4"/>
+</svg>

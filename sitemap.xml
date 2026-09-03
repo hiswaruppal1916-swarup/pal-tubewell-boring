@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://pal-tubewell-boring.vercel.app/</loc>
-    <lastmod>2026-09-01</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://pal-tubewell-boring.vercel.app/android-chrome-512x512.png</image:loc>
+      <image:title>Pal Tubewell Boring Services Logo</image:title>
+      <image:caption>Pal Tubewell Boring Services Purba Medinipur</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://pal-tubewell-boring.vercel.app/assets/drilling_rig_clean.png</image:loc>
+      <image:title>Modern Calyx Drilling Rig</image:title>
+      <image:caption>Pal Tubewell Boring Machinery</image:caption>
+    </image:image>
   </url>
 </urlset>
